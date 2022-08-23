@@ -20,6 +20,7 @@ phases:
       - TAG_NAME=$(echo $CODEBUILD_WEBHOOK_TRIGGER | awk -F'/' '{print $2}')
       - echo "tag name3 :" $TAG_NAME
       - echo start command
+      - echo "test"
   build:
     commands:
       - echo Build started on `date`
